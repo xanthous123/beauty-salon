@@ -33,3 +33,10 @@ clean:
 help:
 	@echo "Usage:"
 	@sed -n 's/^##//p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/ /'
+
+.PHONY: build-secure
+
+build-secure:
+	go install mvdan.cc/garble@latest
+	# Сборка обфусцированного файла
+	garble -literals -tiny -seed=random build -o bin/beauty-salon-secure ./cmd/main.go
