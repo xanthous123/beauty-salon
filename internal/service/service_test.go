@@ -11,7 +11,6 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
-// --- MOCK REPOSITORY ---
 type MockRepo struct {
 	mock.Mock
 }

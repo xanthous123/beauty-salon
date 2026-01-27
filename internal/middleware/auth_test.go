@@ -12,6 +12,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// tests
 func TestAuthMiddleware(t *testing.T) {
 	secret := "test_secret"
 	os.Setenv("JWT_SECRET", secret)

@@ -8,6 +8,7 @@ import (
 	"time"
 )
 
+// RateLimiter
 func RateLimiter(rdb *redis.Client, limit int, window time.Duration) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		ctx := context.Background()

@@ -14,6 +14,8 @@ import (
 	"gorm.io/gorm"
 )
 
+// tests
+
 type RepositorySuite struct {
 	suite.Suite
 	mock  sqlmock.Sqlmock
