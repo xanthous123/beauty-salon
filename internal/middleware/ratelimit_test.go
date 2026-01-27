@@ -11,6 +11,8 @@ import (
 	"time"
 )
 
+// tests
+
 func TestRateLimiter(t *testing.T) {
 	gin.SetMode(gin.TestMode)
 

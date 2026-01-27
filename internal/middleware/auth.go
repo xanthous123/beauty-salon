@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+// auth mid
 func AuthMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		tokenStr := strings.TrimPrefix(c.GetHeader("Authorization"), "Bearer ")

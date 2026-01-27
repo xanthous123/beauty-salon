@@ -78,7 +78,7 @@ func (r *PostgresRepository) DeleteService(id string) error {
 	return r.db.Delete(&models.Service{}, "id = ?", id).Error
 }
 
-// Staff
+// Staffs
 func (r *PostgresRepository) CreateStaff(s *models.Staff) error { return r.db.Create(s).Error }
 func (r *PostgresRepository) GetAllStaff() ([]models.Staff, error) {
 	var staff []models.Staff

@@ -11,6 +11,8 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
+//
+
 type Service interface {
 	Register(username, password string) error
 	Login(username, password string) (string, error)

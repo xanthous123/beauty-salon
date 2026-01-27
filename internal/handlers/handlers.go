@@ -14,7 +14,6 @@ func NewHandler(svc service.Service) *Handler {
 	return &Handler{svc: svc}
 }
 
-// Auth
 func (h *Handler) Register(c *gin.Context) {
 	var i struct{ Username, Password string }
 	if err := c.ShouldBindJSON(&i); err != nil {
